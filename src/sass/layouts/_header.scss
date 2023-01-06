@@ -1,6 +1,6 @@
 .header {
     background-color: $color-background;
-    padding: 52px 0 61px 0;
+    padding: 26px 0;
 }
 
 .header__wrapper {
@@ -11,11 +11,6 @@
 
 .navigation {
     display: flex;
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 5rem;
 }
 
 .navigation__item {
@@ -25,4 +20,14 @@
 
 .navigation__link {
     text-decoration: none;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 5rem;
+    color: $color-links-nav;
+}
+
+.navigation__link_colored {
+    color: $color-additional;
 }

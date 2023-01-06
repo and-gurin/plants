@@ -1,0 +1,18 @@
+.button {
+    padding: 14px 27px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.button_uppercase {
+    text-transform: uppercase;
+    border: solid 2px $color-additional;
+    border-radius: 10px;
+    color: $color-dark;
+}
+
+.button_uppercase:hover {
+    background-color: $color-additional;
+    color: $color-light;
+}

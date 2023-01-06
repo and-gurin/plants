@@ -1,3 +1,21 @@
 .welcome {
     background-color: $color-background;
+    padding: 50px 0 75px 0;
+}
+
+.welcome__wrapper {
+    display: flex;
+}
+
+.welcome__body {
+    padding: 23px 0 0 224px;
+}
+
+.welcome__description {
+    padding: 22px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: $color-text;
 }

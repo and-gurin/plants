@@ -1,5 +1,15 @@
+@import "./base/normalize";
+
 @import "./abstract/constants";
-@import "./layouts/wrapper";
+
+//base
 @import "./base/base";
+@import "./base/buttons";
+
+//components
 @import "./components/welcome";
+@import "./components/about";
+
+//layouts
+@import "./layouts/wrapper";
 @import "./layouts/header"

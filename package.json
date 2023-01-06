@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/and-gurin/plants/issues"
   },
-  "homepage": "https://github.com/and-gurin/plants#readme"
+  "homepage": "https://github.com/and-gurin/plants#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }

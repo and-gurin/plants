@@ -12,6 +12,10 @@ h1 {
     font-weight: 700;
     font-size: 45px;
     line-height: 50px;
+    color: $color-heading;
+    strong {
+        color: $color-primary;
+    }
 }
 
 h2 {
