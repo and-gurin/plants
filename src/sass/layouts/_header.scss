@@ -1,0 +1,28 @@
+.header {
+    background-color: $color-background;
+    padding: 52px 0 61px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 5rem;
+}
+
+.navigation__item {
+    list-style: none;
+    padding: 0 23px;
+}
+
+.navigation__link {
+    text-decoration: none;
+}

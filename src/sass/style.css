@@ -1,0 +1,85 @@
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", Verdana, sans-serif;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+}
+
+h2 {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+h5 {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.welcome {
+  background-color: #EDF2EC;
+}
+
+.header {
+  background-color: #EDF2EC;
+  padding: 52px 0 61px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 5rem;
+}
+
+.navigation__item {
+  list-style: none;
+  padding: 0 23px;
+}
+
+.navigation__link {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
