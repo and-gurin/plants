@@ -4,14 +4,11 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Inter", Verdana, sans-serif;
+    @extend %font-primary;
 }
 
 h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 50px;
+    @include font (normal, 700, 45px, 50px);
     color: $color-heading;
     strong {
         color: $color-primary;
@@ -19,31 +16,24 @@ h1 {
 }
 
 h2 {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
+    @extend %font-additional;
+    @include font (normal, 400, 40px, 52px);
+    color: $color-primary;
+    strong {
+        color: $color-additional;
+        font-weight: 400;
+    }
 }
 
 h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
+    @include font (normal, 700, 40px, 50px);
 }
 
 h4 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 22px;
+    @include font (normal, 700, 20px, 22px);
 }
 
 h5 {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
+    @extend %font-additional;
+    @include font (normal, 700, 40px, 52px);
 }

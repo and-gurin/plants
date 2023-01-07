@@ -401,13 +401,20 @@ ul {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", Verdana, sans-serif;
+}
+
+h5, h2 {
+  font-family: "Inika", Verdana, sans-serif;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
   font-size: 1.6rem;
-  font-family: "Inter", Verdana, sans-serif;
 }
 
 h1 {
@@ -422,11 +429,15 @@ h1 strong {
 }
 
 h2 {
-  font-family: "Inika";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
+  color: #499A18;
+}
+h2 strong {
+  color: #E06733;
+  font-weight: 400;
 }
 
 h3 {
@@ -444,7 +455,6 @@ h4 {
 }
 
 h5 {
-  font-family: "Inika";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -492,8 +502,35 @@ h5 {
   color: #636060;
 }
 
+.about {
+  padding: 93px 0 94px 0;
+}
+
 .about__wrapper {
   display: flex;
+}
+
+.about__body {
+  padding: 35px 153px 0 0;
+}
+
+.about__description {
+  color: #636060;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.service {
+  background-color: #EDF2EC;
+}
+
+.service__header {
+  display: flex;
+}
+
+.servise__title {
+  max-width: 330px;
 }
 
 .wrapper {
