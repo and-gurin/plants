@@ -1,11 +1,14 @@
 {
   "name": "plants",
+  "homepage": "http://and-gurin.github.io/plants",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+    "style": "sass --watch src/sass/style.scss src/sass/style.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,8 +19,8 @@
   "bugs": {
     "url": "https://github.com/and-gurin/plants/issues"
   },
-  "homepage": "https://github.com/and-gurin/plants#readme",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "normalize-scss": "^7.0.1"
   }
 }
