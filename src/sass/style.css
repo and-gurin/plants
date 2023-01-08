@@ -424,8 +424,8 @@ body {
 h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 4.5rem;
+  line-height: 5rem;
   color: #717171;
 }
 h1 strong {
@@ -435,8 +435,8 @@ h1 strong {
 h2 {
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 4rem;
+  line-height: 5.2rem;
   color: #499A18;
 }
 h2 strong {
@@ -447,22 +447,25 @@ h2 strong {
 h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 4rem;
+  line-height: 4.8rem;
+}
+h3 strong {
+  color: #499A18;
 }
 
 h4 {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 2rem;
+  line-height: 2.2rem;
 }
 
 h5 {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 4rem;
+  line-height: 5.2rem;
 }
 
 .button {
@@ -471,6 +474,7 @@ h5 {
   font-weight: 400;
   font-size: 16px;
   line-height: 2rem;
+  background-color: #EDF2EC;
 }
 .button_uppercase {
   text-transform: uppercase;
@@ -490,6 +494,9 @@ h5 {
   color: #E06733;
   border: solid 1px #E06733;
   border-radius: 5px;
+}
+.button_colored_bg-none {
+  background-color: white;
 }
 .button_colored:hover {
   background-color: #E06733;
@@ -562,6 +569,9 @@ h5 {
 .service__buttons > * {
   margin-right: 38px;
 }
+.service__buttons > *:last-child {
+  margin-right: 0;
+}
 
 .card {
   border: solid 1px #E3E1D5;
@@ -603,6 +613,53 @@ h5 {
 
 .card-6 {
   grid-area: c6;
+}
+
+.prices__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion {
+  border: solid 1px #E3E1D5;
+  border-radius: 20px;
+}
+
+.accordion__label {
+  background-color: #EDF2EC;
+  border-radius: 20px;
+  margin: 34px 41px;
+}
+
+.accordion__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  display: inline-block;
+  padding: 14px 40px;
+  width: 194px;
+}
+
+.accordion_img {
+  margin-right: 40px;
+}
+
+.accordion__content {
+  display: none;
+}
+
+.prices-contacts__title {
+  max-width: 452px;
+  text-align: right;
+}
+
+.prices-contacts__button {
+  text-align: right;
+}
+
+.prices-contacts__img {
+  text-align: right;
 }
 
 .wrapper {

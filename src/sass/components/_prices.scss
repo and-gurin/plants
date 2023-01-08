@@ -1,0 +1,44 @@
+.prices__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion {
+    border: solid 1px $color-border;
+    border-radius: 20px;
+    
+}
+
+.accordion__label {
+    background-color: $color-background;
+    border-radius: 20px;
+    margin: 34px 41px;
+}
+
+.accordion__title {
+    @include font (normal, 700, 2rem, 2.2rem);
+    display: inline-block;
+    padding: 14px 40px; 
+    width: 194px;
+}
+
+.accordion_img {
+    margin-right: 40px;
+}
+
+.accordion__content {
+    display: none;
+}
+
+.prices-contacts__title {
+    max-width: 452px;
+    text-align: right;
+}
+
+.prices-contacts__button {
+    text-align: right;
+}
+
+.prices-contacts__img {
+    text-align: right;
+}

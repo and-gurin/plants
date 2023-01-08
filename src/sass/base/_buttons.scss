@@ -2,6 +2,7 @@
     padding: 14px 27px;
     @include font (nomal, 400, 16px, 2rem);
     @extend %transition;
+    background-color: $color-background;
     &_uppercase {
         text-transform: uppercase;
         border: solid 2px $color-additional;
@@ -18,6 +19,9 @@
         color: $color-additional;
         border: solid 1px $color-additional;
         border-radius: 5px;
+        &_bg-none {
+            background-color: $color-light;
+        }
         &:hover {
             background-color: $color-additional;
             color: $color-light;
