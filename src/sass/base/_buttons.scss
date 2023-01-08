@@ -1,18 +1,26 @@
 .button {
     padding: 14px 27px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.button_uppercase {
-    text-transform: uppercase;
-    border: solid 2px $color-additional;
-    border-radius: 10px;
-    color: $color-dark;
-}
-
-.button_uppercase:hover {
-    background-color: $color-additional;
-    color: $color-light;
+    @include font (nomal, 400, 16px, 2rem);
+    @extend %transition;
+    &_uppercase {
+        text-transform: uppercase;
+        border: solid 2px $color-additional;
+        border-radius: 10px;
+        color: $color-dark;
+        &:hover {
+            background-color: $color-additional;
+            color: $color-light;
+        }
+    }
+    &_colored {
+        @extend %font-additional;
+        @include font (normal, 400, 2rem, 2.6rem);
+        color: $color-additional;
+        border: solid 1px $color-additional;
+        border-radius: 5px;
+        &:hover {
+            background-color: $color-additional;
+            color: $color-light;
+        }
+    }
 }

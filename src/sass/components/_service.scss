@@ -2,10 +2,62 @@
     background-color: $color-background;
 }
 
-.service__header {
-    display: flex;
+.service__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr repeat(2, 3fr);
+    grid-template-areas: 
+    "t b b "
+    "c1 c2 c3"
+    "c4 c5 c6";
+    row-gap: 55px;
+    column-gap: 116px;
 }
 
 .servise__title {
-    max-width: 330px;
+    grid-area: t;
+}
+
+.service__buttons {
+    grid-area: b;
+    margin: auto 0;
+}
+
+.service__buttons>* {
+    margin-right: 38px;
+}
+
+.card {
+    border: solid 1px $color-border;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card__subtitle {
+    @include font(nomal, 400, 1.6rem, 2rem);
+    color: $color-heading;
+}
+
+.card-1 {
+    grid-area: c1;
+}
+
+.card-2 {
+    grid-area: c2;
+}
+
+.card-3 {
+    grid-area: c3;
+}
+
+.card-4 {
+    grid-area: c4;
+}
+
+.card-5 {
+    grid-area: c5;
+}
+
+.card-6 {
+    grid-area: c6;
 }

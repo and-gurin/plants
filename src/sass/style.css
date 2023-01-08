@@ -401,11 +401,15 @@ ul {
   box-sizing: border-box;
 }
 
+.button {
+  transition: all 0.3s ease-out;
+}
+
 body {
   font-family: "Inter", Verdana, sans-serif;
 }
 
-h5, h2 {
+.button_colored, h5, h2 {
   font-family: "Inika", Verdana, sans-serif;
 }
 
@@ -452,6 +456,7 @@ h4 {
   font-weight: 700;
   font-size: 20px;
   line-height: 22px;
+  color: #E06733;
 }
 
 h5 {
@@ -463,19 +468,31 @@ h5 {
 
 .button {
   padding: 14px 27px;
+  font-style: nomal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 2rem;
 }
-
 .button_uppercase {
   text-transform: uppercase;
   border: solid 2px #E06733;
   border-radius: 10px;
   color: #000000;
 }
-
 .button_uppercase:hover {
+  background-color: #E06733;
+  color: white;
+}
+.button_colored {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #E06733;
+  border: solid 1px #E06733;
+  border-radius: 5px;
+}
+.button_colored:hover {
   background-color: #E06733;
   color: white;
 }
@@ -525,12 +542,64 @@ h5 {
   background-color: #EDF2EC;
 }
 
-.service__header {
-  display: flex;
+.service__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr repeat(2, 3fr);
+  grid-template-areas: "t b b " "c1 c2 c3" "c4 c5 c6";
+  row-gap: 55px;
+  column-gap: 116px;
 }
 
 .servise__title {
-  max-width: 330px;
+  grid-area: t;
+}
+
+.service__buttons {
+  grid-area: b;
+  margin: auto 0;
+}
+
+.service__buttons > * {
+  margin-right: 38px;
+}
+
+.card {
+  border: solid 1px #E3E1D5;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card__subtitle {
+  font-style: nomal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #717171;
+}
+
+.card-1 {
+  grid-area: c1;
+}
+
+.card-2 {
+  grid-area: c2;
+}
+
+.card-3 {
+  grid-area: c3;
+}
+
+.card-4 {
+  grid-area: c4;
+}
+
+.card-5 {
+  grid-area: c5;
+}
+
+.card-6 {
+  grid-area: c6;
 }
 
 .wrapper {
