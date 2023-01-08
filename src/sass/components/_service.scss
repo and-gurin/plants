@@ -33,6 +33,10 @@
     text-align: center;
 }
 
+.servise__title {
+    color: $color-additional;
+}
+
 .card__subtitle {
     @include font(nomal, 400, 1.6rem, 2rem);
     color: $color-heading;
