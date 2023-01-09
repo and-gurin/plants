@@ -637,6 +637,10 @@ h5 {
   color: #499A18;
 }
 
+.prices__accordion {
+  margin-top: 25px;
+}
+
 .accordion {
   border: solid 1px #E3E1D5;
   border-radius: 20px;
@@ -692,12 +696,12 @@ h5 {
 .contacts__title {
   font-weight: 700;
   color: #499A18;
-  margin: 60px 64px 0 113px;
+  margin: 5px 64px 0 113px;
 }
 
 .drop__label {
   background-color: #D6E7D2;
-  margin-top: 148px;
+  margin-top: 92px;
 }
 
 .drop__title {
