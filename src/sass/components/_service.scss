@@ -1,6 +1,6 @@
 .service {
     background-color: $color-background;
-    padding: 40px 0 121px 0;
+    padding: 0 0 133px 0;
 }
 
 .service__wrapper {
@@ -11,12 +11,15 @@
     "t b b "
     "c1 c2 c3"
     "c4 c5 c6";
-    row-gap: 55px;
+    
     column-gap: 116px;
 }
 
 .servise__title {
     grid-area: t;
+    margin-bottom: 22px;
+    padding-top: 7px;
+    color: $color-primary;
 }
 
 .service__buttons {
@@ -25,7 +28,7 @@
 }
 
 .service__buttons>* {
-    margin-right: 38px;
+    margin-right: 35px;
     &:last-child {
             margin-right: 0;
         }
@@ -35,10 +38,7 @@
     border: solid 1px $color-border;
     border-radius: 20px;
     text-align: center;
-}
-
-.servise__title {
-    color: $color-additional;
+    margin-top: 55px;
 }
 
 .card__subtitle {

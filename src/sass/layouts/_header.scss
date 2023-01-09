@@ -11,11 +11,15 @@
 
 .navigation {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 452px;    
 }
 
 .navigation__item {
     list-style: none;
-    padding: 0 23px;
+    @extend %transition;
+    
 }
 
 .navigation__link {

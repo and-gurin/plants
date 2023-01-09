@@ -401,7 +401,7 @@ ul {
   box-sizing: border-box;
 }
 
-.button {
+.navigation__item, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -415,6 +415,7 @@ ul {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -449,6 +450,8 @@ h4 {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.2rem;
+  margin: 5px 0 10px 0;
+  color: #E06733;
 }
 
 h5 {
@@ -459,7 +462,7 @@ h5 {
 }
 
 .button {
-  padding: 14px 27px;
+  padding: 11px 27px;
   font-style: nomal;
   font-weight: 400;
   font-size: 16px;
@@ -482,6 +485,7 @@ h5 {
   font-size: 2rem;
   line-height: 2.6rem;
   color: #E06733;
+  width: 161px;
   border: solid 1px #E06733;
   border-radius: 5px;
 }
@@ -495,19 +499,23 @@ h5 {
 
 .welcome {
   background-color: #EDF2EC;
-  padding: 50px 0 75px 0;
+  padding: 50px 0 55px 0;
 }
 
 .welcome__wrapper {
   display: flex;
 }
 
+.welcome__img {
+  margin-top: 20px;
+}
+
 .welcome__body {
-  padding: 23px 0 0 224px;
+  padding: 20px 0 0 224px;
 }
 
 .welcome__description {
-  padding: 22px 0;
+  padding: 20px 0;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -536,7 +544,7 @@ h5 {
 
 .service {
   background-color: #EDF2EC;
-  padding: 40px 0 121px 0;
+  padding: 0 0 133px 0;
 }
 
 .service__wrapper {
@@ -544,12 +552,14 @@ h5 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr repeat(2, 3fr);
   grid-template-areas: "t b b " "c1 c2 c3" "c4 c5 c6";
-  row-gap: 55px;
   column-gap: 116px;
 }
 
 .servise__title {
   grid-area: t;
+  margin-bottom: 22px;
+  padding-top: 7px;
+  color: #499A18;
 }
 
 .service__buttons {
@@ -558,7 +568,7 @@ h5 {
 }
 
 .service__buttons > * {
-  margin-right: 38px;
+  margin-right: 35px;
 }
 .service__buttons > *:last-child {
   margin-right: 0;
@@ -568,10 +578,7 @@ h5 {
   border: solid 1px #E3E1D5;
   border-radius: 20px;
   text-align: center;
-}
-
-.servise__title {
-  color: #E06733;
+  margin-top: 55px;
 }
 
 .card__subtitle {
@@ -607,7 +614,7 @@ h5 {
 }
 
 .prices {
-  padding: 40px 0 115px 0;
+  padding: 5px 0 115px 0;
 }
 
 .prices__wrapper {
@@ -726,11 +733,13 @@ h5 {
 
 .navigation {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 452px;
 }
 
 .navigation__item {
   list-style: none;
-  padding: 0 23px;
 }
 
 .navigation__link {

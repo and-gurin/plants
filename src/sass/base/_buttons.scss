@@ -1,5 +1,5 @@
 .button {
-    padding: 14px 27px;
+    padding: 11px 27px;
     @include font (nomal, 400, 16px, 2rem);
     @extend %transition;
     background-color: $color-background;
@@ -17,6 +17,7 @@
         @extend %font-additional;
         @include font (normal, 400, 2rem, 2.6rem);
         color: $color-additional;
+        width: 161px;
         border: solid 1px $color-additional;
         border-radius: 5px;
         &_bg-none {

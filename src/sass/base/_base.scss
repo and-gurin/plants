@@ -1,5 +1,6 @@
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +28,8 @@ h2 {
 
 h4 {
     @include font (normal, 700, 2rem, 2.2rem);
+    margin: 5px 0 10px 0;
+    color: $color-additional;
 }
 
 h5 {
