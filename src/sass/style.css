@@ -747,4 +747,14 @@ h5 {
   color: #E06733;
 }
 
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */
