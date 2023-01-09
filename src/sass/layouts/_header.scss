@@ -30,8 +30,9 @@
     font-size: 1.6rem;
     line-height: 5rem;
     color: $color-links-nav;
+    @extend %transition;
+    &:hover {
+        color: $color-additional;
+    }
 }
 
-.navigation__link_colored {
-    color: $color-additional;
-}
