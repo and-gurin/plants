@@ -405,7 +405,7 @@ ul {
   transition: all 0.3s ease-out;
 }
 
-body {
+.prices__title strong, .prices__title, body {
   font-family: "Inter", Verdana, sans-serif;
 }
 
@@ -442,16 +442,6 @@ h2 {
 h2 strong {
   color: #E06733;
   font-weight: 400;
-}
-
-h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 4.8rem;
-}
-h3 strong {
-  color: #499A18;
 }
 
 h4 {
@@ -625,6 +615,21 @@ h5 {
   justify-content: space-between;
 }
 
+.prices__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #000000;
+}
+.prices__title strong {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #499A18;
+}
+
 .accordion {
   border: solid 1px #E3E1D5;
   border-radius: 20px;
@@ -670,10 +675,37 @@ h5 {
 
 .contacts {
   background-color: #EDF2EC;
+  padding-top: 53px;
 }
 
 .contacts__wrapper {
   display: flex;
+}
+
+.contacts__title {
+  font-weight: 700;
+  color: #499A18;
+  margin: 60px 64px 0 113px;
+}
+
+.drop__label {
+  background-color: #D6E7D2;
+  margin-top: 148px;
+}
+
+.drop__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: #636060;
+  display: inline-block;
+  padding: 5px 226px 5px 20px;
+  width: 384px;
+}
+
+.drop_img {
+  margin-right: 50px;
 }
 
 .wrapper {

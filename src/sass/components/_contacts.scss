@@ -1,7 +1,31 @@
 .contacts {
     background-color: $color-background;
+    padding-top: 53px;
 }
 
 .contacts__wrapper {
     display: flex;
+}
+
+.contacts__title {
+    font-weight: 700;
+    color: $color-primary;
+    margin: 60px 64px 0 113px;
+}
+
+.drop__label {
+    background-color: $color-drop-down;
+    margin-top: 148px;
+}
+
+.drop__title {
+    @include font (normal, 400, 2rem, 4rem);
+    color: $color-text;
+    display: inline-block;
+    padding: 5px 226px 5px 20px;
+    width: 384px;
+}
+
+.drop_img {
+    margin-right: 50px;
 }
