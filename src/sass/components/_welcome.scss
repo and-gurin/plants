@@ -21,6 +21,7 @@
     @include media-tablet {
         width: 280px;
         height: 254px;
+        margin: 0;
     }
     @include media-mobile {
         display: none;
