@@ -12,14 +12,16 @@
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 452px;    
+    justify-content: space-between;  
 }
 
 .navigation__item {
     list-style: none;
     @extend %transition;
-    
+    padding: 0 23px;
+    &:last-child {
+            padding-right: 0;
+        }
 }
 
 .navigation__link {

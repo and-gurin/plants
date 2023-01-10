@@ -1,0 +1,55 @@
+%hamburger-line {
+    content: "";
+        display: inline-block;
+        background-color: $color-heading;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+}
+.hamburger {
+    display: none;
+    width: 40px;
+    height: 26px;
+    position: relative;
+    @include media-mobile {
+        display: inline-block;
+    }
+    &:before {
+        content: "";
+        display: inline-block;
+        background-color: $color-heading;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        background-color: $color-heading;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.hamburger__line1 {
+    content: "";
+    display: inline-block;
+    background-color: $color-heading;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: calc(33% - 1px);
+}
+
+.hamburger__line2 {
+    content: "";
+    display: inline-block;
+    background-color: $color-heading;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: calc(66% - 1px);
+}
