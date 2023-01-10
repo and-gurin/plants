@@ -3,6 +3,10 @@
 }
 .about__wrapper {
     display: flex;
+    flex-direction: row-reverse;
+    @include media-tablet {
+        flex-direction: row-reverse;
+    }   
 }
 
 .about__body {

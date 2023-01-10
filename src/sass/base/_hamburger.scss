@@ -1,10 +1,10 @@
 %hamburger-line {
     content: "";
-        display: inline-block;
-        background-color: $color-heading;
-        height: 2px;
-        width: 100%;
-        position: absolute;
+    display: inline-block;
+    background-color: $color-heading;
+    height: 2px;
+    width: 100%;
+    position: absolute;
 }
 .hamburger {
     display: none;
@@ -13,43 +13,26 @@
     position: relative;
     @include media-mobile {
         display: inline-block;
+        margin-left: auto;
     }
     &:before {
         content: "";
-        display: inline-block;
-        background-color: $color-heading;
-        height: 2px;
-        width: 100%;
-        position: absolute;
+        @extend %hamburger-line;
         top: 0;
     }
     &:after {
         content: "";
-        display: inline-block;
-        background-color: $color-heading;
-        height: 2px;
-        width: 100%;
-        position: absolute;
+        @extend %hamburger-line;
         bottom: 0;
     }
 }
 
 .hamburger__line1 {
-    content: "";
-    display: inline-block;
-    background-color: $color-heading;
-    height: 2px;
-    width: 100%;
-    position: absolute;
+    @extend %hamburger-line;
     top: calc(33% - 1px);
 }
 
 .hamburger__line2 {
-    content: "";
-    display: inline-block;
-    background-color: $color-heading;
-    height: 2px;
-    width: 100%;
-    position: absolute;
+    @extend %hamburger-line;
     top: calc(66% - 1px);
 }
