@@ -32,5 +32,12 @@
             background-color: $color-additional;
             color: $color-light;
         }
+        @include media-mobile {
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            width: 121px;
+            padding: 8px 0;
+        }
     }
 }
