@@ -12,6 +12,11 @@
             background-color: $color-additional;
             color: $color-light;
         }
+        @include media-mobile {
+            font-size: 1rem;
+            line-height: 2rem;
+            padding: 6px 16px;
+        }
     }
     &_colored {
         @extend %font-additional;

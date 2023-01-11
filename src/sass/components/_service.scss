@@ -1,6 +1,22 @@
+@mixin card-background ($repeat: no-repeat, $cover: cover, $position: center, $radius: 20px, $height: 350px, $width: 329px) {
+    background-repeat: $repeat;
+    background-size: $cover;
+    background-position: $position;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    height: $height;
+    width: $width;
+}
+
 .service {
     background-color: $color-background;
     padding: 0 0 133px 0;
+    @include media-tablet {
+        padding: 60px 0 70px 0;
+    }
+    @include media-mobile {
+        padding: 30px 0 27px 0;
+    }
 }
 
 .service__wrapper {
@@ -11,8 +27,33 @@
     "t b b "
     "c1 c2 c3"
     "c4 c5 c6";
-    
     column-gap: 116px;
+    @include media-tablet {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 94px 40px repeat(3, 3fr);
+        grid-template-areas:
+            "t  t "
+            "b  b "
+            "c1 c2"
+            "c3 c4"
+            "c5 c6";
+        row-gap: 40px;
+        column-gap: 106px; 
+    }
+    @include media-mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: 69px 79px repeat(6, 3fr);
+        grid-template-areas:
+            "t "
+            "b "
+            "c1"
+            "c2"
+            "c3"
+            "c4"
+            "c5"
+            "c6";
+        row-gap: 34px;
+    }
 }
 
 .servise__title {
@@ -20,18 +61,38 @@
     margin-bottom: 22px;
     padding-top: 7px;
     color: $color-primary;
+    @include media-tablet {
+        margin: 0;
+        max-width: 306px;
+        padding: 0;
+    }
+    @include media-mobile {
+        font-size: 2.5rem;
+        line-height: 3.3rem;
+        max-width: 187px;
+    }
 }
 
 .service__buttons {
     grid-area: b;
-    margin: auto 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .service__buttons>* {
+    height: 50px;
     margin-right: 35px;
     &:last-child {
             margin-right: 0;
-        }
+    }
+    @include media-mobile {
+        width: 121px;
+        height: 35px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0;
+    }
 }
 
 .card {
@@ -39,6 +100,87 @@
     border-radius: 20px;
     text-align: center;
     margin-top: 55px;
+    @include media-tablet {
+        margin: 0;
+        max-width: 281px;
+    }
+    @include media-mobile {
+        margin: auto;
+    }
+}
+
+.card__title {
+    @include media-tablet {
+        margin: 0;
+        padding: 10px 0;
+    }
+}
+
+.card__subtitle {
+    @include media-tablet {
+        max-width: 201px;
+        padding: 0 0 18px 0;
+        margin: auto;
+    }
+}
+
+.card-image-1 {
+    @include card-background;
+    background-image: url('/src/img/service/card-image-1.png');
+
+    @include media-tablet {
+        @include card-background($width: 280px);
+        background-image: url('/src/img/service-tablet/card-image-1.jpg');
+    }
+}
+
+.card-image-2 {
+    @include card-background;
+    background-image: url('/src/img/service/card-image-2.png');
+
+    @include media-tablet {
+        @include card-background($width: 280px);
+        background-image: url('/src/img/service-tablet/card-image-2.jpg');
+    }
+}
+
+.card-image-3 {
+    @include card-background;
+    background-image: url('/src/img/service/card-image-3.png');
+
+    @include media-tablet {
+        @include card-background($width: 280px);
+        background-image: url('/src/img/service-tablet/card-image-3.jpg');
+    }
+}
+
+.card-image-4 {
+    @include card-background;
+    background-image: url('/src/img/service/card-image-4.png');
+
+    @include media-tablet {
+        @include card-background($width: 280px);
+        background-image: url('/src/img/service-tablet/card-image-4.jpg');
+    }
+}
+
+.card-image-5 {
+    @include card-background;
+    background-image: url('/src/img/service/card-image-5.png');
+
+    @include media-tablet {
+        @include card-background($width: 280px);
+        background-image: url('/src/img/service-tablet/card-image-5.jpg');
+    }
+}
+
+.card-image-6 {
+    @include card-background;
+    background-image: url('/src/img/service/card-image-6.png');
+    @include media-tablet {
+        @include card-background($width:280px);
+        background-image: url('/src/img/service-tablet/card-image-6.jpg');
+    }
 }
 
 .card__subtitle {
