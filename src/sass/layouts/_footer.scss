@@ -1,8 +1,20 @@
+.footer {
+    padding: 30px 0;
+    @include media-tablet {
+        padding: 33px 0 18px 0;
+    }
+    @include media-mobile {
+        padding: 7px 0 22px 0;
+    }
+}
+
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    @include media-tablet {
+        flex-direction: column;
+    }
 }
 
 .footer__title {
@@ -11,10 +23,25 @@
     &:hover {
         color: $color-primary;
     }
+    @include media-tablet {
+        line-height: 2.4rem;
+    }
+}
+
+.footer__link {
+    @include media-tablet {
+        padding: 16px 0;
+    }
+    @include media-mobile {
+        padding: 16px 0 3px 0;
+    }
 }
 
 .social {
     display: flex;
+    @include media-tablet {
+        margin: 7px 0;
+    }
 }
 
 .ico__social {

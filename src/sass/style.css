@@ -1352,11 +1352,29 @@ h5 {
   color: #E06733;
 }
 
+.footer {
+  padding: 30px 0;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 33px 0 18px 0;
+  }
+}
+@media (max-width: 380px) {
+  .footer {
+    padding: 7px 0 22px 0;
+  }
+}
+
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
 }
 
 .footer__title {
@@ -1369,9 +1387,30 @@ h5 {
 .footer__title:hover {
   color: #499A18;
 }
+@media (max-width: 768px) {
+  .footer__title {
+    line-height: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__link {
+    padding: 16px 0;
+  }
+}
+@media (max-width: 380px) {
+  .footer__link {
+    padding: 16px 0 3px 0;
+  }
+}
 
 .social {
   display: flex;
+}
+@media (max-width: 768px) {
+  .social {
+    margin: 7px 0;
+  }
 }
 
 .ico__social {
