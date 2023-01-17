@@ -4,7 +4,7 @@
         padding: 40px 0 88px 0;
     }
     @include media-mobile {
-        padding: 25px 0 40px 0;
+        padding: 20px 0 0px 0;
     }
 }
 .prices__wrapper {
@@ -36,7 +36,7 @@
     }
     @include media-mobile {
         text-align: center;
-        margin: 0 0 40px 0;
+        margin: 0 0 33px 0;
     }
 }
 
@@ -44,7 +44,7 @@
     margin-top: 25px;
     text-align: center;
     @include media-mobile {
-        margin: 0 0 19px 0;
+        margin: 0 0 20px 0;
     }
 }
 
@@ -88,7 +88,7 @@
         font-size: 1.5rem;
         line-height: 2rem;
         width: 60%;
-        padding: 16px 5px 16px 30px;
+        padding: 16px 5px 16px 10px;
     }
 }
 
@@ -106,9 +106,18 @@
 .prices-contacts__title {
     max-width: 452px;
     text-align: right;
+    strong{
+        @include media-mobile{
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
     @include media-mobile {
+        max-width: 230px;
+        font-size: 20px;
+        line-height: 35px;
         text-align: center;
-        margin: 0 0 14px 0;
+        margin: 0 0 17px 0;
     }
 }
 

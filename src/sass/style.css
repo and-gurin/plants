@@ -640,7 +640,7 @@ h5 {
 }
 @media (max-width: 380px) {
   .welcome__description {
-    padding: 20px 0;
+    padding: 20px 0 25px 0;
   }
 }
 
@@ -707,7 +707,8 @@ h5 {
   .about__description {
     font-size: 1.5rem;
     line-height: 2.5rem;
-    padding: 22px 0 0 0;
+    padding: 15px 0 0 0;
+    text-align: left;
   }
 }
 
@@ -806,6 +807,7 @@ h5 {
     font-size: 1.5rem;
     line-height: 2rem;
     padding: 0;
+    margin: 0 10px 10px 0;
   }
 }
 
@@ -1022,7 +1024,7 @@ h5 {
 }
 @media (max-width: 380px) {
   .prices {
-    padding: 25px 0 40px 0;
+    padding: 20px 0 0px 0;
   }
 }
 
@@ -1067,7 +1069,7 @@ h5 {
 @media (max-width: 380px) {
   .prices__title {
     text-align: center;
-    margin: 0 0 40px 0;
+    margin: 0 0 33px 0;
   }
 }
 
@@ -1077,7 +1079,7 @@ h5 {
 }
 @media (max-width: 380px) {
   .prices__accordion {
-    margin: 0 0 19px 0;
+    margin: 0 0 20px 0;
   }
 }
 
@@ -1132,7 +1134,7 @@ h5 {
     font-size: 1.5rem;
     line-height: 2rem;
     width: 60%;
-    padding: 16px 5px 16px 30px;
+    padding: 16px 5px 16px 10px;
   }
 }
 
@@ -1158,9 +1160,18 @@ h5 {
   text-align: right;
 }
 @media (max-width: 380px) {
+  .prices-contacts__title strong {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 380px) {
   .prices-contacts__title {
+    max-width: 230px;
+    font-size: 20px;
+    line-height: 35px;
     text-align: center;
-    margin: 0 0 14px 0;
+    margin: 0 0 17px 0;
   }
 }
 
@@ -1218,6 +1229,12 @@ h5 {
     width: 200px;
     height: 248px;
     order: 1;
+  }
+}
+@media (max-width: 380px) {
+  .contacts_img {
+    width: 100px;
+    height: 124px;
   }
 }
 
@@ -1281,6 +1298,11 @@ h5 {
 
 .drop_img {
   margin-right: 50px;
+}
+@media (max-width: 380px) {
+  .drop_img {
+    margin-right: 50px;
+  }
 }
 
 .wrapper {
@@ -1362,7 +1384,7 @@ h5 {
 }
 @media (max-width: 380px) {
   .footer {
-    padding: 7px 0 22px 0;
+    padding: 23px 0 22px 0;
   }
 }
 
