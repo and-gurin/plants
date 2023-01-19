@@ -19,12 +19,12 @@
                     <img src="./src/img/logo_vector.svg" alt="logo">
                 </a>
             </div>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                     <span class="hamburger__line1"></span>
                     <span class="hamburger__line2"></span>
             </div>
             <nav class="header__navigation">
-                <ul class="navigation">
+                <ul class="navigation" id="navigation">
                     <li class="navigation__item">
                         <a class="navigation__link navigation__link_colored" href="#welcome">
                             Home
@@ -53,6 +53,7 @@
                 </ul>
             </nav>
         </div>
+        <div class="popup" id="popup"></div>
     </header>
     <main class="main">
         <section id="welcome" class="welcome">
@@ -252,5 +253,6 @@
         </footer>
     </main>
     <script src="index.js"></script>
+    <script src="./src/js/hamburger.js"></script>
 </body>
 </html>

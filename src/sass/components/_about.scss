@@ -1,5 +1,6 @@
 .about {
     padding: 93px 0 94px 0;
+    overflow: hidden;
     @include media-tablet {
         padding: 40px 0 95px 0;
     }

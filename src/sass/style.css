@@ -536,6 +536,7 @@ h5 {
   .hamburger {
     display: inline-block;
     margin-left: auto;
+    cursor: pointer;
   }
 }
 .hamburger:before {
@@ -547,17 +548,70 @@ h5 {
   bottom: 0;
 }
 
+.hamburger::before.active .hamburger::after.active {
+  opacity: 0;
+}
+
 .hamburger__line1 {
   top: calc(33% - 1px);
+}
+
+.hamburger__line1.active {
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger__line2 {
   top: calc(66% - 1px);
 }
 
+.hamburger__line2.active {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.popup {
+  display: none;
+}
+@media (max-width: 380px) {
+  .popup {
+    position: fixed;
+    top: 96px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 380px) {
+  .popup.open {
+    left: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .popup .navigation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+}
+
+.popup .navigation > li > a:hover {
+  background-color: rgba(122, 82, 179, 0.1);
+}
+
 .welcome {
   background-color: #EDF2EC;
   padding: 50px 0 55px 0;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .welcome {
@@ -646,6 +700,7 @@ h5 {
 
 .about {
   padding: 93px 0 94px 0;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .about {
@@ -728,6 +783,7 @@ h5 {
 .service {
   background-color: #EDF2EC;
   padding: 0 0 133px 0;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .service {
@@ -1202,6 +1258,7 @@ h5 {
 .contacts {
   background-color: #EDF2EC;
   padding-top: 53px;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .contacts {
@@ -1272,6 +1329,9 @@ h5 {
 .drop__label {
   background-color: #D6E7D2;
   margin-top: 92px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
 }
 @media (max-width: 768px) {
   .drop__label {
@@ -1287,7 +1347,7 @@ h5 {
   color: #636060;
   display: inline-block;
   padding: 5px 226px 5px 20px;
-  width: 384px;
+  flex-grow: 1;
 }
 @media (max-width: 380px) {
   .drop__title {
@@ -1297,7 +1357,7 @@ h5 {
 }
 
 .drop_img {
-  margin-right: 50px;
+  margin-right: 35px;
 }
 @media (max-width: 380px) {
   .drop_img {

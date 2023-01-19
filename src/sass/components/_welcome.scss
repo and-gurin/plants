@@ -1,6 +1,7 @@
 .welcome {
     background-color: $color-background;
     padding: 50px 0 55px 0;
+    overflow: hidden;
     @include media-tablet {
         padding: 40px 0 70px 0;
     }
