@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/sass/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
     <title>Plants</title>
 </head>
 <body>
@@ -19,12 +19,17 @@
                     <img src="./src/img/logo_vector.svg" alt="logo">
                 </a>
             </div>
-            <span class="hamburger">
-                    <span class="hamburger__line1"></span>
-                    <span class="hamburger__line2"></span>
-                </span>
+            <div class="hamb" >
+                <div class="hamburger" id="hamb">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </div>
+            </div>
+             
             <nav class="header__navigation">
-                <ul class="navigation">
+                <ul class="navigation" id="navigation">
                     <li class="navigation__item">
                         <a class="navigation__link navigation__link_colored" href="#welcome">
                             Home
@@ -53,6 +58,7 @@
                 </ul>
             </nav>
         </div>
+        <div class="popup" id="popup"></div>
     </header>
     <main class="main">
         <section id="welcome" class="welcome">
@@ -82,7 +88,7 @@
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                     </p>
                 </div>
-                <img width="464" height="479" src="./src/img/about/houseplant.png" alt="houseplant">
+                <img class="about__img" width="464" height="479" src="./src/img/about/houseplant.png" alt="houseplant">
             </div>
         </section>
         <section id="service" class="service">
@@ -94,43 +100,43 @@
                     <button class="button button_colored">Planting</button>
                 </div>
                 <article class="card card-1">
-                        <img width="329" height="350" src="./src/img/service/card-image-1.png" alt="card-image-1">
-                        <h4>Garden care</h4>
+                        <div class="card-image-1"></div>
+                        <h4 class="card__title">Garden care</h4>
                         <div class="card__subtitle">
                             Lorem Ipsum has been the industry
                         </div>
                     </article>
                      <article class="card card-2">
-                        <img width="329" height="350" src="./src/img/service/card-image-2.png" alt="card-image-2">
-                        <h4>Planting</h4>
+                        <div class="card-image-2"></div>
+                        <h4 class="card__title">Planting</h4>
                         <div class="card__subtitle">
                             Lorem Ipsum has been the industry
                         </div>
                     </article> 
                     <article class="card card-3">
-                        <img width="329" height="350" src="./src/img/service/card-image-3.png" alt="card-image-3">
-                        <h4>Lawn care</h4>
+                        <div class="card-image-3"></div>
+                        <h4 class="card__title">Lawn care</h4>
                         <div class="card__subtitle">
                             Lorem Ipsum has been the industry
                         </div>
                     </article> 
                     <article class="card card-4">
-                        <img width="329" height="350" src="./src/img/service/card-image-4.png" alt="card-image-4">
-                        <h4>Planting</h4>
+                        <div class="card-image-4"></div>
+                        <h4 class="card__title">Planting</h4>
                         <div class="card__subtitle">
                             Lorem Ipsum has been the industry
                         </div>
                     </article> 
                     <article class="card card-5">
-                        <img width="329" height="350" src="./src/img/service/card-image-5.png" alt="card-image-5">
-                        <h4>Garden care</h4>
+                        <div class="card-image-5"></div>
+                        <h4 class="card__title">Garden care</h4>
                         <div class="card__subtitle">
                             Lorem Ipsum has been the industry
                         </div>
                     </article> 
                     <article class="card card-6">
-                        <img width="329" height="350" src="./src/img/service/card-image-6.png" alt="card-image-6">
-                        <h4>Planting</h4>
+                        <div class="card-image-6"></div> 
+                        <h4 class="card__title">Planting</h4>
                         <div class="card__subtitle">
                             Lorem Ipsum has been the industry
                         </div>
@@ -144,7 +150,8 @@
                     <div class="accordion">
                         <div class="accordion__container block-rounded">
                             <div class="accordion__label">
-                                <span class="accordion__title">Basics</span><img class="accordion_img" src="./src/img/icons/accordion_btn_closed.svg" alt="btn_closed">
+                                <span class="accordion__title">Basics</span>
+                                <span class="accordion_img"></span>
                             </div>
                             <div class="accordion__content">
                                 <hr>
@@ -162,7 +169,8 @@
                         </div>
                         <div class="accordion__container block-rounded">
                             <div class="accordion__label">
-                                <span class="accordion__title">Standard</span><img src="./src/img/icons/accordion_btn_closed.svg" alt="btn_closed">
+                                <span class="accordion__title">Standard</span>
+                                <span class="accordion_img"></span>
                             </div>
                             <div class="accordion__content">
                                 <hr>
@@ -180,7 +188,8 @@
                     </div>
                     <div class="accordion__container block-rounded">
                             <div class="accordion__label">
-                                <span class="accordion__title">Pro care</span><img src="./src/img/icons/accordion_btn_closed.svg" alt="btn_closed">
+                                <span class="accordion__title">Pro care</span>
+                                <span class="accordion_img"></span>
                             </div>
                             <div class="accordion__content">
                                 <hr>
@@ -217,11 +226,12 @@
         </section>
         <section id="contacts" class="contacts">
             <div class="wrapper contacts__wrapper">
-                <img width="400" height="496" src="./src/img/contacts/contact_woman.png" alt="contact_woman">
+                <img class="contacts_img" width="400" height="496" src="./src/img/contacts/contact_woman.png" alt="contact_woman">
                 <h2 class="contacts__title">Contact us</h2>
                 <div class="drop-down">
                     <div class="drop__label">
-                        <span class="drop__title">City</span><img class="drop_img" src="./src/img/icons/drop_btn_unactive.svg" alt="btn_closed">
+                        <span class="drop__title">City</span>
+                        <img class="drop_img" src="./src/img/icons/drop_btn_unactive.svg" alt="btn_closed">
                     </div>
                 </div>
             </div>
@@ -229,7 +239,7 @@
         <footer class="footer">
             <div class="wrapper footer__wrapper">
                 <a class="footer__title" href="https://github.com/and-gurin">&#169; &nbsp; 2022 &nbsp; github</a>
-                <a target="_blank" href="https://rs.school/js-stage0/" class="footer__title">Rolling Scopes School</a>
+                <a target="_blank" href="https://rs.school/js-stage0/" class="footer__title footer__link">Rolling Scopes School</a>
                 <ul class="social">
                     <li>
                         <a class="ico__social" target="_blank" href="https://www.instagram.com/and_gurin/"><img src="./src/img/icons/instagram.svg" alt="instagram"></a>
@@ -248,5 +258,6 @@
         </footer>
     </main>
     <script src="index.js"></script>
+    <script src="./src/js/hamburger.js"></script>
 </body>
 </html>

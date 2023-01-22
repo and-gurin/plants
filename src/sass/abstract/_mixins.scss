@@ -5,6 +5,16 @@
     line-height: $height;
 }
 
+@mixin background ($repeat: no-repeat, $cover: cover, $position: center, $radius: 20px, $height: 350px, $width: 329px) {
+    background-repeat: $repeat;
+    background-size: $cover;
+    background-position: $position;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    height: $height;
+    width: $width;
+}
+
 @mixin media-desctop {
     @media (max-width: $desctop-width) {@content; }
 }

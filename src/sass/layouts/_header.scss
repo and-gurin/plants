@@ -1,6 +1,13 @@
 .header {
     background-color: $color-background;
     padding: 26px 0;
+    overflow: hidden;
+    @include media-tablet {
+        padding: 17px 0;
+    }
+    @include media-tablet {
+        padding: 35px 0;
+    }
 }
 
 .header__wrapper {
@@ -12,13 +19,17 @@
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;  
+    justify-content: space-between;
+    @include media-mobile {
+        display: none;
+    }  
 }
 
 .navigation__item {
     list-style: none;
     @extend %transition;
     padding: 0 23px;
+    white-space:nowrap;
     &:last-child {
             padding-right: 0;
         }

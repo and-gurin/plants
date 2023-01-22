@@ -1,55 +1,82 @@
-%hamburger-line {
-    content: "";
-        display: inline-block;
-        background-color: $color-heading;
-        height: 2px;
-        width: 100%;
-        position: absolute;
+.hamb {
+    margin-left: auto;
 }
+
 .hamburger {
     display: none;
-    width: 40px;
-    height: 26px;
-    position: relative;
     @include media-mobile {
-        display: inline-block;
-    }
-    &:before {
-        content: "";
-        display: inline-block;
-        background-color: $color-heading;
-        height: 2px;
-        width: 100%;
-        position: absolute;
-        top: 0;
-    }
-    &:after {
-        content: "";
-        display: inline-block;
-        background-color: $color-heading;
-        height: 2px;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
+        display: block;
+        cursor: pointer;
     }
 }
 
-.hamburger__line1 {
-    content: "";
-    display: inline-block;
+.hamburger__line  {
+    display: block;
     background-color: $color-heading;
     height: 2px;
-    width: 100%;
-    position: absolute;
-    top: calc(33% - 1px);
+    width: 40px;
+    margin: 6px auto;
+    transition: 0.2s;
 }
 
-.hamburger__line2 {
-    content: "";
-    display: inline-block;
-    background-color: $color-heading;
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    top: calc(66% - 1px);
+.hamburger.active .hamburger__line:nth-child(2){
+    opacity: 0;
 }
+
+.hamburger.active .hamburger__line:nth-child(3) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger__line:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger.active .hamburger__line:nth-child(4) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+.popup {
+    display: none;
+    @include media-mobile {
+        position: fixed;
+        top: 108px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: $color-light;
+        z-index: 1;
+        display: flex;
+        transition: 0.3s;
+    }
+}
+
+.popup.open {
+    @include media-mobile {
+        left: 0;
+    }
+}
+
+.popup .navigation {
+    @include media-mobile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: start;
+        overflow: auto;
+    }
+}
+
+.popup .navigation > li {
+    width: 100%;
+    padding: 0;
+}
+
+.popup .navigation>li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    padding: 10px 0;    
+}
+
