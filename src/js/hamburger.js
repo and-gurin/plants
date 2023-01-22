@@ -1,4 +1,4 @@
-const hamburger = document.querySelector("#hamburger");
+const hamburger = document.querySelector("#hamb");
 const popup = document.querySelector("#popup");
 
 const navigation = document.querySelector("#navigation").cloneNode(1);
@@ -15,4 +15,15 @@ function hamburgerHandler (e){
 
 function renderPopup (){
     popup.appendChild(navigation);
+}
+
+const links = Array.from(navigation.children);
+
+links.forEach(link=>{
+    link.addEventListener("click", closeOneClick)
+})
+
+function closeOneClick () {
+    hamburger.classList.remove("active");
+    popup.classList.remove("open");
 }

@@ -517,55 +517,43 @@ h5 {
   }
 }
 
-.hamburger__line2, .hamburger__line1, .hamburger:after, .hamburger:before {
-  content: "";
-  display: inline-block;
-  background-color: #717171;
-  height: 2px;
-  width: 100%;
-  position: absolute;
+.hamb {
+  margin-left: auto;
 }
 
 .hamburger {
   display: none;
-  width: 40px;
-  height: 26px;
-  position: relative;
 }
 @media (max-width: 380px) {
   .hamburger {
-    display: inline-block;
-    margin-left: auto;
+    display: block;
     cursor: pointer;
   }
 }
-.hamburger:before {
-  content: "";
-  top: 0;
-}
-.hamburger:after {
-  content: "";
-  bottom: 0;
+
+.hamburger__line {
+  display: block;
+  background-color: #717171;
+  height: 2px;
+  width: 40px;
+  margin: 6px auto;
+  transition: 0.2s;
 }
 
-.hamburger::before.active .hamburger::after.active {
+.hamburger.active .hamburger__line:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger__line1 {
-  top: calc(33% - 1px);
+.hamburger.active .hamburger__line:nth-child(3) {
+  opacity: 0;
 }
 
-.hamburger__line1.active {
-  transform: translateY(8px) rotate(45deg);
+.hamburger.active .hamburger__line:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
 }
 
-.hamburger__line2 {
-  top: calc(66% - 1px);
-}
-
-.hamburger__line2.active {
-  transform: translateY(-8px) rotate(-45deg);
+.hamburger.active .hamburger__line:nth-child(4) {
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .popup {
@@ -574,12 +562,12 @@ h5 {
 @media (max-width: 380px) {
   .popup {
     position: fixed;
-    top: 96px;
+    top: 108px;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #fff;
-    z-index: 100;
+    background-color: white;
+    z-index: 1;
     display: flex;
     transition: 0.3s;
   }
@@ -597,15 +585,22 @@ h5 {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     justify-content: start;
-    padding: 50px 0;
     overflow: auto;
   }
 }
 
-.popup .navigation > li > a:hover {
-  background-color: rgba(122, 82, 179, 0.1);
+.popup .navigation > li {
+  width: 100%;
+  padding: 0;
+}
+
+.popup .navigation > li > a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 .welcome {
