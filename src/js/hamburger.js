@@ -27,3 +27,10 @@ function closeOneClick () {
     hamburger.classList.remove("active");
     popup.classList.remove("open");
 }
+
+popup.addEventListener("click", closeAround);
+
+function closeAround () {
+    hamburger.classList.remove("active");
+    popup.classList.remove("open");
+}
