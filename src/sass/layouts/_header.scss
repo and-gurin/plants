@@ -1,6 +1,7 @@
 .header {
     background-color: $color-background;
     padding: 26px 0;
+    overflow: hidden;
     @include media-tablet {
         padding: 17px 0;
     }

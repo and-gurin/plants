@@ -1067,6 +1067,7 @@ h5 {
 
 .prices {
   padding: 5px 0 115px 0;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .prices {
@@ -1378,6 +1379,7 @@ h5 {
 .header {
   background-color: #EDF2EC;
   padding: 26px 0;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .header {

@@ -1,5 +1,6 @@
 .prices {
     padding: 5px 0 115px 0;
+    overflow: hidden;
     @include media-tablet {
         padding: 40px 0 88px 0;
     }
