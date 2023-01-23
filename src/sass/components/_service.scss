@@ -118,60 +118,60 @@
 
 .card-image-1 {
     @include background;
-    background-image: url('/src/img/service/card-image-1.png');
+    background-image: url('../img/service/card-image-1.png');
 
     @include media-tablet {
         @include background($width: 280px);
-        background-image: url('/src/img/service-tablet/card-image-1.jpg');
+        background-image: url('../img/service-tablet/card-image-1.jpg');
     }
 }
 
 .card-image-2 {
     @include background;
-    background-image: url('/src/img/service/card-image-2.png');
+    background-image: url('../img/service/card-image-2.png');
 
     @include media-tablet {
         @include background($width: 280px);
-        background-image: url('/src/img/service-tablet/card-image-2.jpg');
+        background-image: url('../img/service-tablet/card-image-2.jpg');
     }
 }
 
 .card-image-3 {
     @include background;
-    background-image: url('/src/img/service/card-image-3.png');
+    background-image: url('../img/service/card-image-3.png');
 
     @include media-tablet {
         @include background($width: 280px);
-        background-image: url('/src/img/service-tablet/card-image-3.jpg');
+        background-image: url('../img/service-tablet/card-image-3.jpg');
     }
 }
 
 .card-image-4 {
     @include background;
-    background-image: url('/src/img/service/card-image-4.png');
+    background-image: url('../img/service/card-image-4.png');
 
     @include media-tablet {
         @include background($width: 280px);
-        background-image: url('/src/img/service-tablet/card-image-4.jpg');
+        background-image: url('../img/service-tablet/card-image-4.jpg');
     }
 }
 
 .card-image-5 {
     @include background;
-    background-image: url('/src/img/service/card-image-5.png');
+    background-image: url('../img/service/card-image-5.png');
 
     @include media-tablet {
         @include background($width: 280px);
-        background-image: url('/src/img/service-tablet/card-image-5.jpg');
+        background-image: url('../img/service-tablet/card-image-5.jpg');
     }
 }
 
 .card-image-6 {
     @include background;
-    background-image: url('/src/img/service/card-image-6.png');
+    background-image: url('../img/service/card-image-6.png');
     @include media-tablet {
         @include background($width:280px);
-        background-image: url('/src/img/service-tablet/card-image-6.jpg');
+        background-image: url('../img/service-tablet/card-image-6.jpg');
     }
 }
 
