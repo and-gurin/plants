@@ -1,8 +1,7 @@
 .prices {
     padding: 5px 0 115px 0;
-    overflow: hidden;
     @include media-tablet {
-        padding: 40px 0 88px 0;
+        padding: 10px 0 88px 0;
     }
     @include media-mobile {
         padding: 20px 0 0px 0;
@@ -22,6 +21,7 @@
     @extend %font-primary;
     @include font (normal, 700, 4rem, 5rem);
     color: $color-dark;
+    margin: 5px 0 57px 0;
         strong {
             @include font (normal, 700, 4rem, 5rem);
             @extend %font-primary;
@@ -32,18 +32,22 @@
             }
         }
     @include media-tablet {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        margin-left: 15px;
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+        
     }
     @include media-mobile {
+        font-size: 25px;
+        line-height: 30px;
         text-align: center;
-        margin: 0 0 33px 0;
+        margin: 0 0 37px 0;
     }
 }
 
 .prices__accordion {
     margin-top: 25px;
-    text-align: center;
+    text-align: left;
     @include media-mobile {
         margin: 0 0 20px 0;
     }
@@ -52,8 +56,17 @@
 .accordion {
     border: solid 1px $color-border;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 332px;
+    padding: 34px 41px;
+    @include media-tablet {
+        padding: 34px calc(10px + (40 - 10) * ((100vw - 460px) / (730 - 460)));
+    }
     @include media-mobile {
-        width: 224px;
+        max-width: 224px;
         height: 235px;
         padding: 29px 22px;
         display: flex;
@@ -62,12 +75,27 @@
     }
 }
 
+.accordion>* {
+    margin-bottom: 34px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include media-mobile {
+        margin-bottom: 0;
+    }
+}
+
 .accordion__label {
     background-color: $color-background;
     border-radius: 20px;
-    margin: 34px 41px;
     width: 250px;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include media-tablet {
+        width: calc(170px + (250 - 170) * ((100vw - 460px) / (768 - 460)));
+    }
     @include media-mobile {
         width: 180px;
         margin: 0 auto;
@@ -80,8 +108,8 @@
 .accordion__title {
     @include font (normal, 700, 2rem, 2.2rem);
     display: inline-block;
-    padding: 14px 40px; 
-    width: 194px;
+    padding: 14px; 
+    
     @include media-tablet {
         padding: auto 40px;
     }
@@ -89,15 +117,18 @@
         font-size: 1.5rem;
         line-height: 2rem;
         width: 60%;
-        padding: 16px 5px 16px 10px;
+        padding: 16px 5px 16px 25px;
     }
 }
 
 .accordion_img {
     display: inline-block;
     @include background ($width: 16px, $height: 16px);
-    background-image: url(/src/img/icons/accordion_btn_closed.svg);
-    margin-right: 30px;
+    background-image: url(../img/icons/accordion_btn_closed.svg);
+    margin-right: 10px;
+    @include media-mobile {
+        margin-right: 35px;
+    }
 }
 
 .accordion__content {
@@ -107,18 +138,24 @@
 .prices-contacts__title {
     max-width: 452px;
     text-align: right;
+    margin: 27px 0 20px 0;
     strong{
         @include media-mobile{
             font-size: 20px;
             line-height: 35px;
         }
     }
+    @include media-tablet {
+        margin-top: 135px;
+        font-size: 25px;
+        line-height: 35px;
+    }
     @include media-mobile {
         max-width: 230px;
         font-size: 20px;
         line-height: 35px;
         text-align: center;
-        margin: 0 0 17px 0;
+        margin: 0 0 4px 0;
     }
 }
 

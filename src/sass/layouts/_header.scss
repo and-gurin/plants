@@ -1,11 +1,10 @@
 .header {
     background-color: $color-background;
     padding: 26px 0;
-    overflow: hidden;
     @include media-tablet {
         padding: 17px 0;
     }
-    @include media-tablet {
+    @include media-mobile {
         padding: 35px 0;
     }
 }
@@ -17,9 +16,13 @@
 }
 
 .navigation {
+    padding-top: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media-tablet {
+        flex-wrap: wrap;
+    }
     @include media-mobile {
         display: none;
     }  

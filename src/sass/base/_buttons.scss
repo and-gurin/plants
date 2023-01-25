@@ -32,6 +32,9 @@
             background-color: $color-additional;
             color: $color-light;
         }
+        @include media-tablet {
+            width: calc(130px + (161 - 130) * ((100vw - 460px) / (760 - 460)));
+        }
         @include media-mobile {
             font-weight: 700;
             font-size: 1.5rem;
