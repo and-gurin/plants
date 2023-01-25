@@ -1,6 +1,5 @@
 .about {
     padding: 93px 0 94px 0;
-    overflow: hidden;
     @include media-tablet {
         padding: 40px 0 95px 0;
     }
@@ -10,15 +9,22 @@
 }
 .about__wrapper {
     display: flex;
+    justify-content: space-between;
     @include media-tablet {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }   
 }
 
 .about__body {
     padding: 35px 153px 0 0;
+    max-width: 605px;
     @include media-tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
     }
 }
@@ -28,6 +34,8 @@
         font-size: 3.5rem;
         line-height: 4.6rem;
         margin: 0;
+        max-width: 423px;
+        text-align: center;
     }
     @include media-mobile {
         font-size: 2.5rem;
@@ -39,23 +47,40 @@
     @include font (normal, 400, 2rem, 3rem);
     @include media-tablet {
         margin: 0;
-        padding: 40px 0;
+        padding: 50px 0 70px 0;
+        width: calc(320px + (668 - 320) * ((100vw - 380px) / (768 - 380)));
     }
     @include media-mobile {
         font-size: 1.5rem;
         line-height: 2.5rem;
-        padding: 15px 0 0 0;
+        padding: 15px 0 5px 0;
         text-align: left;
     }
 }
 
 .about__img {
+    width: 464px;
+    height: 479px;
     @include media-tablet {
         width: 250px;
         height: 258px;
     }
     @include media-mobile {
         width: 150px;
+        height: 147px;
+    }
+}
+
+.about__img img{
+    max-width: 100%;
+    min-width: 350px;
+    max-height: 479px;
+    @include media-tablet {
+        min-width: 250px;
+        height: 258px;
+    }
+    @include media-mobile {
+        min-width: 150px;
         height: 147px;
     }
 }

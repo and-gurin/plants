@@ -1,7 +1,6 @@
 .service {
     background-color: $color-background;
-    padding: 0 0 133px 0;
-    overflow: hidden;
+    padding: 40px 0 123px 0;
     @include media-tablet {
         padding: 60px 0 70px 0;
     }
@@ -10,62 +9,34 @@
     }
 }
 
-.service__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr repeat(2, 3fr);
-    grid-template-areas: 
-    "t b b "
-    "c1 c2 c3"
-    "c4 c5 c6";
-    column-gap: 116px;
+.service__header {
+    display: flex;
+    padding-bottom: 75px;
     @include media-tablet {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 94px 40px repeat(3, 3fr);
-        grid-template-areas:
-            "t  t "
-            "b  b "
-            "c1 c2"
-            "c3 c4"
-            "c5 c6";
-        row-gap: 40px;
-        column-gap: 106px; 
-    }
-    @include media-mobile {
-        grid-template-columns: 1fr;
-        grid-template-rows: 69px 79px repeat(6, 3fr);
-        grid-template-areas:
-            "t "
-            "b "
-            "c1"
-            "c2"
-            "c3"
-            "c4"
-            "c5"
-            "c6";
-        row-gap: 34px;
+        flex-direction: column;
+        padding-bottom: 40px;
     }
 }
 
 .servise__title {
-    grid-area: t;
-    margin-bottom: 22px;
-    padding-top: 7px;
+    max-width: 306px;
+    margin: 0 142px 0 0;
     color: $color-primary;
     @include media-tablet {
-        margin: 0;
-        max-width: 306px;
+        font-size: 35px;
+        line-height: 46px;
+        margin: 0 0 40px 0;
         padding: 0;
     }
     @include media-mobile {
         font-size: 2.5rem;
         line-height: 3.3rem;
         max-width: 187px;
+        margin: 0 0 35px 0;
     }
 }
 
 .service__buttons {
-    grid-area: b;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -73,9 +44,9 @@
 
 .service__buttons>* {
     height: 50px;
-    margin-right: 35px;
+    margin-right: 37px;
     &:last-child {
-            margin-right: 0;
+        margin-right: 0;
     }
     @include media-mobile {
         width: 121px;
@@ -83,7 +54,23 @@
         font-size: 1.5rem;
         line-height: 2rem;
         padding: 0;
-        margin: 0 10px 10px 0;
+        margin: 0 10px 5px 0;
+    }
+}
+
+.service__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(329.5px, 1fr));
+    row-gap: 55px;
+    column-gap: 106px;
+    @include media-tablet {
+        grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
+        row-gap: 35px;
+        column-gap: 100px; 
+    }
+    @include media-mobile {
+        grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
+        row-gap: 33px;
     }
 }
 
@@ -91,7 +78,7 @@
     border: solid 1px $color-border;
     border-radius: 20px;
     text-align: center;
-    margin-top: 55px;
+    max-width: 330px;
     @include media-tablet {
         margin: 0;
         max-width: 281px;
@@ -102,6 +89,7 @@
 }
 
 .card__title {
+    padding: 5px 0;
     @include media-tablet {
         margin: 0;
         padding: 10px 0;
@@ -109,6 +97,7 @@
 }
 
 .card__subtitle {
+    padding-bottom: 30px;
     @include media-tablet {
         max-width: 201px;
         padding: 0 0 18px 0;
@@ -180,26 +169,3 @@
     color: $color-heading;
 }
 
-.card-1 {
-    grid-area: c1;
-}
-
-.card-2 {
-    grid-area: c2;
-}
-
-.card-3 {
-    grid-area: c3;
-}
-
-.card-4 {
-    grid-area: c4;
-}
-
-.card-5 {
-    grid-area: c5;
-}
-
-.card-6 {
-    grid-area: c6;
-}
