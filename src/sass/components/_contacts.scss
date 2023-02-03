@@ -3,9 +3,11 @@
     padding-top: 53px;
     @include media-tablet {
         padding-top: 40px;
+        padding-bottom: 30px;
     }
     @include media-mobile {
         padding-top: 25px;
+        padding-bottom: 50px;
     }
 }
 
@@ -17,7 +19,7 @@
     }
 }
 
-.contacts_img {
+.contacts__img {
     width: 400px;
     height: 497px;
     @include media-tablet {
@@ -26,24 +28,47 @@
         order: 1;
     }
     @include media-mobile {
-        width: 100px;
-        height: 124px;
+        display: none;
     }
 }
 
-.contacts_img img{
+.contacts__img img{
     max-width: 100%;
     max-height: 497px;
     @include media-tablet {
         width: 200px;
         height: 248px;
         margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
+    @include media-mobile {
+        display: none;
+    }
+}
+
+.contacts__img_mobile {
+    display: none;
+
+    @include media-mobile {
+        display: block;
+        width: 100px;
+        height: 124px;
+    }
+}
+
+.contacts__img_mobile img{
+
     @include media-mobile {
         width: 100px;
         height: 124px;
         margin-left: -1px;
+        margin-top: 50px;
     }
+}
+
+.hidden {
+    display: none;
 }
 
 .contacts__title {
@@ -52,55 +77,11 @@
     margin: 5px 64px 0 113px;
     @include media-tablet {
         order: 3;
-        margin: 0 0 100px 0;
+        margin: 0 0 70px 0;
     }
     @include media-mobile {
         font-size: 25px;
         line-height: 33px;
-        margin: 0 0 80px 0;
-    }
-}
-
-.drop-down {
-    @include media-tablet {
-        order: 2;
-        padding-bottom: 250px;
-    }
-    @include media-mobile {
-        padding-bottom: 132px;
-    }
-}
-
-.drop__label {
-    background-color: $color-drop-down;
-    margin-top: 92px;
-    display: flex;
-    justify-content: space-between;
-    width: calc(250px + (450 - 250) * ((100vw - 770px) / (1440 - 770)));
-    @include media-tablet {
-        width: calc(350px + (450 - 350) * ((100vw - 440px) / (768 - 440)));
-        margin: 0;
-    }
-    @include media-mobile {
-        width: calc(250px + (300 - 250) * ((100vw - 320px) / (380 - 320)));
-    }
-}
-
-.drop__title {
-    @include font (normal, 400, 2rem, 4rem);
-    color: $color-text;
-    display: inline-block;
-    padding: 5px 0 5px 20px;
-    flex-grow: 1;
-    @include media-mobile {
-        padding: 5px 76px 5px 20px;
-        width: 234px;
-    }
-}
-
-.drop_img {
-    margin-right: 35px;
-    @include media-mobile{
-        margin-right: 20px;
+        margin: 0 0 42px 0;
     }
 }
