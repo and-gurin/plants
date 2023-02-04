@@ -490,6 +490,16 @@ h5 {
     padding: 6px 16px;
   }
 }
+.button_accordion {
+  font-style: nomal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #717171;
+  border: none;
+  border-radius: 10px;
+  padding: 3px 20px;
+}
 .button_contacts {
   padding: 7px 57px;
   font-style: nomal;
@@ -1258,6 +1268,8 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
+  position: relative;
 }
 @media (max-width: 768px) {
   .accordion__label {
@@ -1316,6 +1328,30 @@ h5 {
 
 .accordion__content {
   display: none;
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+@media (max-width: 768px) {
+  .accordion__content {
+    width: calc(170px + 80 * (100vw - 460px) / 308);
+  }
+}
+@media (max-width: 380px) {
+  .accordion__content {
+    width: 180px;
+  }
+}
+
+.accordion__label.accordion_active .accordion_img {
+  background-image: url(../img/icons/accordion_btn_opened.svg);
+}
+
+.accordion__label.accordion_active {
+  background-color: #D6E7D2;
+  border-radius: 20px 20px 0 0;
 }
 
 .prices-contacts__title {
@@ -1368,6 +1404,49 @@ h5 {
   .prices-contacts__img {
     display: none;
   }
+}
+
+.accordion__content {
+  background-color: #D6E7D2;
+  border-radius: 0 0 20px 20px;
+  padding: 0 40px 12px 40px;
+}
+
+.accordion__description {
+  margin: 0;
+  border-top: solid 0.5px #AEA1A1;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #717171;
+  padding: 6px 0;
+}
+
+.accordion__price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #E06733;
+}
+.accordion__price b {
+  font-size: 20px;
+}
+.accordion__price strong {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #000000;
+}
+
+.accordion__button {
+  margin-top: 12px;
+}
+
+.accordion__button a {
+  color: #717171;
 }
 
 .contacts {
@@ -1460,7 +1539,7 @@ h5 {
 .contacts__title {
   font-weight: 700;
   color: #499A18;
-  margin: 5px 64px 0 113px;
+  margin: 5px 64px 0 70px;
 }
 @media (max-width: 768px) {
   .contacts__title {

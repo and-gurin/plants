@@ -93,6 +93,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
+    position: relative;
     @include media-tablet {
         width: calc(170px + (250 - 170) * ((100vw - 460px) / (768 - 460)));
     }
@@ -133,6 +135,26 @@
 
 .accordion__content {
     display: none;
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    @include media-tablet {
+        width: calc(170px + (250 - 170) * ((100vw - 460px) / (768 - 460)));
+    }
+    @include media-mobile {
+        width: 180px;
+    }
+}
+
+.accordion__label.accordion_active .accordion_img{
+    background-image: url(../img/icons/accordion_btn_opened.svg);
+}
+
+.accordion__label.accordion_active {
+    background-color: $color-drop-down;
+    border-radius: 20px 20px 0 0;
 }
 
 .prices-contacts__title {
@@ -175,4 +197,38 @@
     @include media-mobile {
        display: none;
     }
+}
+
+.accordion__content {
+    background-color: $color-drop-down;
+    border-radius: 0 0 20px 20px;
+    padding: 0 40px 12px 40px;
+}
+
+.accordion__description {
+    margin: 0;
+    border-top: solid 0.5px $color-line;
+    @include font (normal, 300, 1rem, 1rem);
+    color: $color-heading;
+    padding: 6px 0;
+}
+
+.accordion__price {
+    @include font (normal, 700, 1.2rem, 2rem);
+    color: $color-additional;
+    b {
+        font-size: 20px;
+    }
+    strong {
+        @include font (normal, 400, 1.2rem, 2rem);
+        color: $color-dark;
+    }
+}
+
+.accordion__button {
+    margin-top: 12px;
+}
+
+.accordion__button a {
+    color: $color-heading;
 }

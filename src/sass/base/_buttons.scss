@@ -18,6 +18,13 @@
             padding: 6px 16px;
         }
     }
+    &_accordion {
+        @include font (nomal, 700, 1.4rem, 2rem);
+        color: $color-heading;
+        border: none;
+        border-radius: 10px;
+        padding: 3px 20px;
+    }
     &_contacts {
         padding: 7px 57px;;
         @extend %font-primary;
