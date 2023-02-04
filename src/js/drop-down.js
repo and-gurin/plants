@@ -40,15 +40,13 @@ const dropDownClickHandler = () => {
         currentText.innerText = text;
         select.classList.remove('drop__active');
         showContainer(text);
-        console.log(text)
+        
         backgroundRemove()
     }
 
     function showContainer (text) {
         let cutText = text.toLowerCase().slice(0, 3)
-
         
-        console.log(cutText)
         dropContainer.forEach(drop => {
             drop.classList.remove('active__container')
             if (drop.classList.contains(cutText)){
