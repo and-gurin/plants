@@ -37,6 +37,13 @@ const buttonClickHandler = (btnIndex) => {
         
     })
 
+    cards.forEach(card=>{
+        let activeButtons = document.querySelectorAll(".service__buttons .button_colored_active");
+        if (activeButtons.length === 0) {
+            card.classList.remove('blur')
+        }
+    })
+
     const blockActiveButton = () => {
     let buttons = document.querySelectorAll(".service__buttons .button");
         buttons.forEach(button => {
