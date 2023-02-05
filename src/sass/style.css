@@ -562,6 +562,11 @@ h5 {
   }
 }
 
+@media (hover: hover) {
+  button:hover {
+    background-color: blue;
+  }
+}
 .hamb {
   margin-left: auto;
 }
