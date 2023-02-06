@@ -47,10 +47,6 @@
         &_bg-none {
             background-color: $color-light;
         }
-        &:hover {
-            background-color: $color-additional;
-                color: $color-light;
-        }
         &_active {
             @extend %font-additional;
             @include font (normal, 400, 2rem, 2.6rem);
@@ -79,7 +75,8 @@
 }
 
 @media (hover: hover) {
-    button:hover {
-        background-color: blue;
+    .button_colored:hover {
+        background-color: $color-additional;
+        color: $color-light;
     }
 }
