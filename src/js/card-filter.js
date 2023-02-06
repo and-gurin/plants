@@ -46,8 +46,10 @@ const buttonClickHandler = (btnIndex) => {
 
     const blockActiveButton = () => {
     let buttons = document.querySelectorAll(".service__buttons .button");
+    console.log(buttons)
         buttons.forEach(button => {
             let activeButtons = document.querySelectorAll(".service__buttons .button_colored_active")
+            
             if (activeButtons.length > 1) {
             if (!button.classList.contains('button_colored_active')) {
                 button.setAttribute("disabled", true)

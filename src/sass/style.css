@@ -527,10 +527,6 @@ h5 {
 .button_colored_bg-none {
   background-color: white;
 }
-.button_colored:hover {
-  background-color: #E06733;
-  color: white;
-}
 .button_colored_active {
   font-style: normal;
   font-weight: 400;
@@ -563,8 +559,9 @@ h5 {
 }
 
 @media (hover: hover) {
-  button:hover {
-    background-color: blue;
+  .button_colored:hover {
+    background-color: #E06733;
+    color: white;
   }
 }
 .hamb {
@@ -1337,7 +1334,7 @@ h5 {
   width: 250px;
   z-index: 1;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: 0.3s;
 }
 @media (max-width: 768px) {
   .accordion__content {
@@ -1415,6 +1412,7 @@ h5 {
   background-color: #D6E7D2;
   border-radius: 0 0 20px 20px;
   padding: 0 40px 12px 40px;
+  transition: 0.3s ease-in-out;
 }
 
 .accordion__description {

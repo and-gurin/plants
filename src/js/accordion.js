@@ -8,10 +8,6 @@ const addAccordionClickHandler = () => {
     function accordionLabelHandler () {
       
       this.classList.toggle('accordion_active')
-      let accordionContent = document.querySelectorAll('.accordion__container .accordion_active');
-      console.log(accordionContent)
-      
-      
         
       let content = this.nextElementSibling;
         if (content.style.display === "block") {
@@ -20,6 +16,8 @@ const addAccordionClickHandler = () => {
           content.style.display = "block";
         }
     }
+
+        
 }
 
 addAccordionClickHandler()
