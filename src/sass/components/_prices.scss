@@ -105,6 +105,9 @@
         align-items: center;
         justify-content: space-around;
     }
+    &.accordion_active + .accordion__content{
+        display: block;
+    }
 }
 
 .accordion__title {

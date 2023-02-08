@@ -1288,6 +1288,9 @@ h5 {
     justify-content: space-around;
   }
 }
+.accordion__label.accordion_active + .accordion__content {
+  display: block;
+}
 
 .accordion__title {
   font-style: normal;
