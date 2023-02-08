@@ -964,6 +964,7 @@ h5 {
 
 .blur {
   filter: blur(10px);
+  transition: 0.3s ease-in-out;
 }
 
 .card {
