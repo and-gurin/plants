@@ -76,6 +76,7 @@
 
 .blur {
     filter: blur(10px);
+    transition: 0.3s ease-in-out;
 }
 
 .card {
@@ -83,6 +84,7 @@
     border-radius: 20px;
     text-align: center;
     max-width: 330px;
+
     @include media-tablet {
         margin: 0;
         max-width: 281px;

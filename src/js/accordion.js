@@ -6,18 +6,12 @@ const addAccordionClickHandler = () => {
     })
 
     function accordionLabelHandler () {
-      
+      accordionLabel.forEach(label=>{
+        label.classList.remove('accordion_active')
+      })
       this.classList.toggle('accordion_active')
-        
-      let content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-    }
-
-        
+      
+    }     
 }
 
 addAccordionClickHandler()

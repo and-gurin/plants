@@ -510,10 +510,6 @@ h5 {
   border-radius: 5px;
   color: #000000;
 }
-.button_contacts:hover {
-  background-color: #E06733;
-  color: white;
-}
 .button_colored {
   color: #E06733;
   font-style: normal;
@@ -560,6 +556,10 @@ h5 {
 
 @media (hover: hover) {
   .button_colored:hover {
+    background-color: #E06733;
+    color: white;
+  }
+  .button_contacts:hover {
     background-color: #E06733;
     color: white;
   }
@@ -964,6 +964,7 @@ h5 {
 
 .blur {
   filter: blur(10px);
+  transition: 0.3s ease-in-out;
 }
 
 .card {
@@ -1286,6 +1287,9 @@ h5 {
     align-items: center;
     justify-content: space-around;
   }
+}
+.accordion__label.accordion_active + .accordion__content {
+  display: block;
 }
 
 .accordion__title {
