@@ -510,10 +510,6 @@ h5 {
   border-radius: 5px;
   color: #000000;
 }
-.button_contacts:hover {
-  background-color: #E06733;
-  color: white;
-}
 .button_colored {
   color: #E06733;
   font-style: normal;
@@ -560,6 +556,10 @@ h5 {
 
 @media (hover: hover) {
   .button_colored:hover {
+    background-color: #E06733;
+    color: white;
+  }
+  .button_contacts:hover {
     background-color: #E06733;
     color: white;
   }
