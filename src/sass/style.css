@@ -554,16 +554,6 @@ h5 {
   }
 }
 
-@media (hover: hover) {
-  .button_colored:hover {
-    background-color: #E06733;
-    color: white;
-  }
-  .button_contacts:hover {
-    background-color: #E06733;
-    color: white;
-  }
-}
 .hamb {
   margin-left: auto;
 }
